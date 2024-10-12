@@ -1,0 +1,89 @@
+body,
+html {
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ececec;
+}
+h1,
+label,
+h3,
+a {
+  color: #fff;
+}
+#gallery {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.img-preview {
+  margin: 10px;
+  border: 1px solid #ccc;
+  padding: 5px;
+  position: relative;
+}
+.img-preview img {
+  max-width: 100px;
+  max-height: 150px;
+  object-fit: cover;
+}
+.remove-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 10px;
+  height: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 60%;
+  min-width: 30%;
+  padding: 0 5%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  background-color: #ff0044;
+}
+label[for="imageFiles"] {
+  padding: 20px;
+  border: dashed rgb(255, 255, 255) 2px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+label[for="imageFiles"]:hover {
+  box-shadow: 0 0 10px rgba(0, 94, 255, 1);
+}
+button {
+  padding: 20px;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+button:hover {
+  box-shadow: 0 0 10px #000;
+}
+form {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .container {
+    width: 90%;
+  }
+}
